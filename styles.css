@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(242, 242, 242);
+}
+
+header {
+    background-color: #fdfdfd;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: rgb(4, 195, 253);
+    text-decoration: none;
+    text-align: center;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#search-form input, #search-form button {
+    margin: 10px;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 200px; /* Ширина изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    margin-right: 15px; /* Отступ между изображением и текстом */
+}
+section{
+    text-align:center;
+}
+
+.colormain{
+    margin-left:20%;
+    max-width:1200px;
+    max-height: auto;
+}
+#subscribe {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff; /* Цвет фона формы */
+    border-radius: 10px; /* Закругленные углы формы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для формы */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Отступ между полями */
+}
+
+.form-group input {
+    width: 100%; /* Поля занимают всю ширину контейнера */
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Граница поля */
+    border-radius: 25px; /* Закругленные углы поля ввода */
+}
+
+.rounded-button {
+    width: 100%; /* Кнопка занимает всю ширину */
+    padding: 10px; /* Внутренние отступы кнопки */
+    background-color: rgb(4, 195, 253); /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем границу кнопки */
+    border-radius: 25px; /* Закругленные углы кнопки */
+    cursor: pointer; /* Курсор при наведении на кнопку */
+    font-size: 16px; /* Размер шрифта */
+    transition: background-color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+.rounded-button:hover {
+    background-color: #0099cc; /* Цвет фона при наведении на кнопку */
+}
+.dov{
+    text-align: start;
+}
+#booking-principles {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff; /* Цвет фона секции */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для секции */
+}
+
+.principle {
+    display: flex; /* Используем flexbox для выравнивания иконки и текста */
+    align-items: center; /* Вертикальное выравнивание */
+    margin-bottom: 20px; /* Отступ между принципами */
+}
+
+.principle-icon {
+    width: 50px; /* Ширина иконки */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    margin-right: 15px; /* Отступ между иконкой и текстом */
+}
+
+h1 {
+    text-align: center; /* Центрирование заголовка */
+}
+
+h3 {
+    margin: 0; /* Убираем отступы у заголовков принципов */
+}
+.info-block {
+    background-color: #ffffff; /* Цвет фона блока */
+    border-radius: 10px; /* Закругленные углы */
+    padding: 20px; /* Внутренние отступы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для блока */
+    margin: 20px 0; /* Отступы сверху и снизу между блоками */
+}
+
+.promotion {
+    margin-bottom: 20px; /* Отступ между акциями */
+}
+
+.promotion img {
+    width: 100%; /* Изображение занимает всю ширину блока */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+header {
+    background-color: #fdfdfd;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    flex-grow: 1; /* Позволяет навигации занимать доступное пространство */
+}
+
+nav ul {
+    list-style-type: none; /* Убирает маркеры списка */
+    margin: 0; /* Убирает отступы */
+    padding: 0; /* Убирает внутренние отступы */
+    display: flex; /* Используем Flexbox для горизонтального расположения */
+    justify-content: flex-end; /* Выравнивание элементов вправо */
+}
+
+nav ul li {
+    margin-right: 20px; /* Отступ между элементами меню */
+}
+
+nav ul li h3 {
+    margin: 0; /* Убираем отступы у заголовков */
+}
+
+nav ul li a {
+    color: rgb(4, 195, 253); /* Цвет текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s ease; /* Плавный переход цвета при наведении */
+}
+
+nav ul li a:hover {
+    color: #0099cc; /* Цвет текста при наведении */
+}

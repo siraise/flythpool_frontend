@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlightPool</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Стили для секции акций */
+        #promotions {
+            text-align: center; /* Центрирование текста и изображений */
+            margin: 20px 0; /* Отступы сверху и снизу */
+        }
+
+        .promotion {
+            display: inline-block; /* Отображение акций в строку */
+            margin: 20px; /* Отступ между акциями */
+            width: 300px; /* Ширина блока с акцией */
+            border: 1px solid #ccc; /* Обводка блока */
+            border-radius: 10px; /* Закругленные углы */
+            overflow: hidden; /* Скрытие переполнения */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для блока */
+        }
+
+        .promotion img {
+            width: 100%; /* Изображение занимает всю ширину блока */
+            height: 300px; /* Автоматическая высота для сохранения пропорций */
+        }
+
+        .promotion h3 {
+            margin: 10px 0; /* Отступы сверху и снизу заголовка */
+        }
+
+        .promotion p {
+            padding: 0 10px; /* Отступы слева и справа для текста */
+        }
+
+        .promotion button {
+            margin: 10px; /* Отступы вокруг кнопки */
+            padding: 10px; /* Внутренние отсту3пы кнопки */
+            background-color: rgb(4, 195, 253); /* Цвет фона кнопки */
+            color: white; /* Цвет текста кнопки */
+            border: none; /* Убираем границу кнопки */
+            border-radius: 5px; /* Закругленные углы кнопки */
+            cursor: pointer; /* Курсор при наведении на кнопку */
+        }
+
+        .promotion button:hover {
+            background-color: #0099cc; /* Цвет фона при наведении на кнопку */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Логотип" class="logo-image"> <!-- Замените 'logo.png' на путь к вашему изображению -->
+            <h1><a href="index.html" style="color: rgb(4, 195, 253); text-decoration: none;">FlightPool</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><h3><a href="#promotions">Акции</a></h3></li>
+                <li><h3><a href="#flights">Поиск рейсов</a></h3></li>
+                <li><h3><a href="#registration">Регистрация на рейс</a></h3></li>
+                <li><h3><a href="#contact">Личный кабинет</a></h3></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="colormain">
+            <section id="hero" class="info-block">
+                <h2>Найдите идеальный рейс для вашего путешествия!</h2>
+                <form id="search-form">
+                    <input type="text" placeholder="Откуда" class="test-0-fd" required>
+                    <input type="text" placeholder="Куда" class="test-0-fa" required>
+                    <input type="date" class="test-0-fdt-" required>
+                    <input type="date" class="test-0-fat" required>
+                    <input type="number" placeholder="Количество пассажиров (1-8)" class="test-0-fnp" min="1" max="8" required>
+                    <button type="submit" class="test-0-fbs">Найти билеты</button>
+                </form>
+            </section>
+
+            <section id="booking-principles">
+                
+                <h1>Принципы накопления бронирований</h1>
+                <!-- Здесь будет анимированная инфографика -->
+                <div class="principle">
+                    <h3>Принцип 1: Раннее бронирование</h3>
+                    <p>Бронирование за 30 дней до вылета снижает стоимость на 20%.</p>
+                </div>
+                <div class="principle">
+                    <h3>Принцип 2: Групповое бронирование</h3>
+                    <p>При бронировании от 5 человек - скидка 15%.</p>
+                </div>
+                <div class="principle">
+                    <h3>Принцип 3: Сезонные акции</h3>
+                    <p>Скидки до 30% в низкий сезон.</p>
+                </div>
+            </section>
+
+            <section id="trust" class="info-block">
+                <h1>Доверие компании</h1>
+                <div class="dov">
+                <p>Мы в FlightPool понимаем, что путешествия — это не просто перемещение из точки А в точку Б. Это возможность открыть новые горизонты, создать незабываемые воспоминания и насладиться жизнью. Поэтому мы стремимся обеспечить нашим клиентам максимальный комфорт и безопасность на каждом этапе их путешествия.</p>
+            
+                <p>Наша компания имеет все необходимые лицензии и сертификаты, подтверждающие нашу деятельность в сфере авиаперевозок. Мы работаем только с проверенными авиакомпаниями и партнерами, что гарантирует высокое качество обслуживания и соблюдение всех стандартов безопасности.</p>
+            
+                <p>Мы гарантируем:</p>
+                <ul>
+                    <li><strong>Безопасность:</strong> Все рейсы проходят строгую проверку, а наши партнеры соблюдают международные стандарты безопасности.</li>
+                    <li><strong>Прозрачность:</strong> Мы предоставляем полную информацию о ценах, условиях бронирования и правилах отмены билетов.</li>
+                    <li><strong>Поддержка клиентов:</strong> Наша команда поддержки доступна 24/7, готова ответить на ваши вопросы и помочь в любых ситуациях.</li>
+                    <li><strong>Индивидуальный подход:</strong> Мы учитываем ваши предпочтения и потребности, чтобы сделать ваше путешествие максимально комфортным.</li>
+                </ul>
+            
+                <p>Выбирая FlightPool, вы выбираете надежного партнера для своих путешествий. Мы заботимся о каждом клиенте и делаем все возможное, чтобы ваши поездки были безопасными и приятными.</p>
+            </div>
+            </section>
+
+            <!-- Секция акций -->
+            <section id="promotions" class="info-block">
+                <h1>Акции</h1>
+
+                <!-- Акции -->
+                <div class="promotion">
+                    <img src="promotion1.jpg" alt="Акция 1"> <!-- Замените на путь к изображению акции -->
+                    <h3>Супер скидка!</h3>
+                    <p>Скидка 50% на все рейсы в этом месяце.</p>
+                    <button class="test-0-abm">Посмотреть акцию</button> <!-- Кнопка под акцией -->
+                </div>
+
+                <div class="promotion">
+                    <img src="promotion2.jpg" alt="Акция 2"> <!-- Замените на путь к изображению акции -->
+                    <h3>Летние предложения!</h3>
+                    <p>Скидка 30% на рейсы в летний сезон.</p>
+                    <button class="test-0-abm">Посмотреть акцию</button> <!-- Кнопка под акцией -->
+                </div>
+
+                <div class="promotion">
+                    <img src="promotion3.jpg" alt="Акция 3"> <!-- Замените на путь к изображению акции -->
+                    <h3>Групповые скидки!</h3>
+                    <p>При бронировании от 5 человек - скидка 15%.</p>
+                    <button class="test-0-abm">Посмотреть акцию</button> <!-- Кнопка под акцией -->
+                </div>
+
+            </section>
+
+            <!-- Подписка на закрытые акции -->
+            <section id="subscribe">
+                <h1>Подписка на закрытые акции</h1>
+                <form id="subscribe-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Введите ваш Email" class="test-0-sie" required />
+                    </div>
+                    <button type="submit" class="rounded-button">Подписаться</button> 
+                </form>
+            </section>
+
+            <!-- Остальные секции -->
+            <section id="flights" class="info-block">
+                <h2>Доступные рейсы</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Рейс</th>
+                            <th>Город отправления</th>
+                            <th>Город назначения</th>
+                            <th>Дата вылета</th>
+                            <th>Цена</th>
+                            <th>Доступность</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FL123</td>
+                            <td>Москва</td>
+                            <td>Сочи</td>
+                            <td>2024-06-15</td>
+                            <td>5000р</td>
+                            <td>Доступен</td>
+                        </tr>
+                        <tr>
+                            <td>FL456</td>
+                            <td>Санкт-Петербург</td>
+                            <td>Калининград</td>
+                            <td>2024-06-20</td>
+                            <td>5000р</td>
+                            <td>Доступен</td>
+                        </tr>
+                        <tr>
+                            <td>FL789</td>
+                            <td>Казань</td>
+                            <td>Екатеринбург</td>
+                            <td>2024-07-10</td>
+                            <td>5000р</td>
+                            <td>Нет в наличии</td>
+                        </tr>
+                        <tr>
+                            <td>FL1011</td>
+                            <td>Нижний Новгород</td>
+                            <td>Москва</td>
+                            <td>2024-08-05</td>
+                            <td>5000р</td>
+                            <td>Доступен</td>
+                        </tr>
+                        <!-- Добавьте дополнительные рейсы по необходимости -->
+                    </tbody>
+                </table>
+            
+                <!-- Стилизация таблицы -->
+                <style>
+                    #flights table {
+                        width: 100%;
+                        border-collapse: collapse;
+                    }
+                    #flights th, #flights td {
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                        text-align: left;
+                    }
+                    #flights th {
+                        background-color: #f9f9f9;
+                    }
+                </style>
+            
+            </section>
+
+        </div> <!-- Закрытие colormain -->
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="footer-content">
+            <p>2024 FlightPool. Все права защищены.</p> 
+            <p>Телефон “8 (800) 100-10-10”</p>
+        </div>
+
+        <!-- Навигация по сайту в подвале -->
+        <div class="footer-links">
+            <ul>
+                <li><a href="#privacy">Политика конфиденциальности</a></li>
+                <li><a href="#terms">Условия использования</a></li>
+
+            </ul>
+        </div>
+
+    </footer>
+
+</body>
+</html>
