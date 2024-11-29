@@ -1,0 +1,76 @@
+html,body{
+    height: 100%;
+}
+body{
+display: flex;
+flex-direction: column;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    padding: 32px 0;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.info .container{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+}
+.info li{
+    font-size: 18px;
+    margin:0 0 32px;
+}
+img{
+    max-width: 300px;
+    max-width:300px;
+}
+.info{
+    padding:10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    max-width:500px;
+}
+
+.hero {
+    padding: 96px 0;
+    margin-top: 50px;
+}
+
+.hero h2 {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 16px 48px 0;
+}
+
+.ad-list {
+    display: flex; /* Используем Flexbox */
+    flex-direction: row; /* Элементы располагаются в столбик */
+    gap: 16px; /* Промежуток между элементами */
+}
+
+.ad-item {
+    display: flex; /* Для выравнивания содержимого внутри блока */
+    flex-direction: column;
+     /* Элементы располагаются вертикально */
+    padding: 10px; /* Отступы внутри блока */
+    border: 1px solid #ccc; /* Граница для отделения блоков */
+    border-radius: 8px; /* Закругленные углы */
+}
+
+.hero img {
+    max-width: 100%;
+    object-fit: cover;
+}
+    
