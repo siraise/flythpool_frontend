@@ -1,0 +1,35 @@
+.header{
+    margin: 0 auto;
+    max-width: 1000px;
+    max-height:500px;
+    background-color: gray;
+    
+}
+.container h1{
+    color: white;
+    text-align: center;
+}
+header button{
+    max-width:150px;
+    margin: 0 auto;
+    margin-left:100px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    padding:15%;
+    max-width:1000px;
+    margin: 0 auto;
+}
+.Glav .container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.Glav  h1{
+    width:300px;
+    color: gray;
+    margin: 0 auto;
+
+}

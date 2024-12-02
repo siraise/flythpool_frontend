@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    max-height:500px;
+}
+.container h1{
+    color: rgb(0, 0, 0);
+    max-width:1200px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    padding:100px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.reg{
+display: flex;
+justify-content: center;
+}
+.container th,td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size:30px;
+}
+.container th {
+    background-color: #f2f2f2;
+}
