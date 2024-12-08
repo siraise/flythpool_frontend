@@ -1,0 +1,179 @@
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    background-color: rgb(255, 255, 255);
+}
+header{
+    padding:64px 0;
+}
+header{
+    background-color:rgb(255, 255, 255);
+    max-height: 1%;
+}
+header a{
+    font-size: 32px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+    &::before{
+        content: '<';
+        margin: 0 16px 0 0;
+    }
+    margin-left:60px;
+}
+.search-form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-input {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.search-input input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.search-input button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+}
+
+.search-filters {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.search-filters select {
+    flex: 1;
+    min-width: 350px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 30px;
+    background-color: white;
+}
+
+.search-filters select:focus,
+.search-input input:focus {
+    outline: none;
+    border-color: #666;
+}
+.ad-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.ad-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.ad-item:hover {
+    transform: translateY(-5px);
+}
+
+.ad-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.ad-item small {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    padding: 10px 15px 0;
+}
+
+.ad-item h3 {
+    margin: 10px 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.ad-item p {
+    padding: 0 15px 15px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.imog{
+    max-width:100%;
+}
+.imog img{
+    display: block;
+    margin: 0 auto;
+    padding:40px;
+    width: 500px;
+    height:500px;
+}
+.hero .container .obyav {
+    text-align: center;
+}
+.obyav select{
+    max-width: 250px;
+    margin: 0 auto;
+    font-size: 25px;
+}
+.ad-item small{
+    font-size:36px;
+}
+.ad-item h3{
+    font-size:36px;
+}
+.ad-item p{
+    font-size:30px;
+}
+.ad-item img{
+    width:500px;
+    height:600px;
+}
+.ad-list{
+    max-width: 100%;
+}
+.ad-item{
+    margin: 0 auto;
+}
+.ad-list {
+    display: flex; /* Используем Flexbox */
+    flex-direction: row; /* Элементы располагаются в ширину */
+    gap: 10px; /* Промежуток между элементами */
+}
+
+.ad-item {
+    display: flex; /* Для выравнивания содержимого внутри блока */
+    flex-direction: column;
+     /* Элементы располагаются вертикально */
+    padding: 5px; /* Отступы внутри блока */
+    border: 1px solid #ccc; /* Граница для отделения блоков */
+    border-radius: 8px; /* Закругленные углы */
+}
+h2{
+    font-size: 50px;
+}

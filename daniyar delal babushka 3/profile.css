@@ -1,0 +1,113 @@
+html,body{
+    height: 100%;
+}
+body{
+display: flex;
+flex-direction: column;
+}
+header{
+    padding:64px 0;
+}
+header{
+    background-color:rgb(255, 255, 255);
+    max-height: 1%;
+}
+header a{
+    font-size: 32px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+    &::before{
+        content: '<';
+        margin: 0 16px 0 0;
+    }
+    margin-left:60px;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    padding: 32px 0;
+}
+.info .container{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+}
+.info li{
+    font-size: 22px;
+    margin:0 0 32px;
+}
+.info img{
+    width: 400px;
+    width:500px;
+}
+.info{
+    padding:20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    width:850px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.hero {
+    padding: 96px 0;
+    margin-top: 50px;
+}
+
+.hero h2 {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 16px 48px 0;
+}
+
+.ad-list {
+    display: flex; /* Используем Flexbox */
+    flex-direction: row; /* Элементы располагаются в ширину */
+    gap: 10px; /* Промежуток между элементами */
+}
+
+.ad-item {
+    display: flex; /* Для выравнивания содержимого внутри блока */
+    flex-direction: column;
+     /* Элементы располагаются вертикально */
+    padding: 5px; /* Отступы внутри блока */
+    border: 1px solid #ccc; /* Граница для отделения блоков */
+    border-radius: 8px; /* Закругленные углы */
+}
+
+.hero img {
+    max-width: 100%;
+    object-fit: cover;
+}
+.ad-item small{
+    font-size:36px;
+}
+.ad-item h3{
+    font-size:36px;
+}
+.ad-item p{
+    font-size:30px;
+}
+.ad-item img{
+    width:500px;
+    height:600px;
+}
+.ad-list{
+    max-width: 100%;
+}
+.ad-item{
+    margin: 0 auto;
+}
+.container select{
+    font-size: 25px;
+}
+
+    
