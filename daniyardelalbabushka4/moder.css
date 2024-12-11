@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+header{
+    padding:64px 0;
+}
+header{
+    background-color:rgb(255, 255, 255);
+    max-height: 1%;
+}
+header a{
+    font-size: 32px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+    &::before{
+        content: '<';
+        margin: 0 16px 0 0;
+    }
+    margin-left: 60px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+header {
+    padding: 20px 0;
+}
+.filter {
+    padding: 50px 0;
+}
+
+.filter form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter input,
+.filter select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.filter button {
+    padding: 8px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter button:hover {
+    background: #0056b3;
+}
+
+.filter label {
+    font-weight: bold;
+}
+.ad-list {
+    display: flex; /* Используем Flexbox */
+    flex-direction: row; /* Элементы располагаются в столбик */
+    gap: 16px; /* Промежуток между элементами */
+}
+
+.ad-item {
+    display: flex; /* Для выравнивания содержимого внутри блока */
+    flex-direction: column;
+     /* Элементы располагаются вертикально */
+    padding: 10px; /* Отступы внутри блока */
+    border: 1px solid #ccc; /* Граница для отделения блоков */
+    border-radius: 8px; /* Закругленные углы */
+}
+
+.hero img {
+    max-width: 100%;
+    object-fit: cover;
+}
+html,body{
+    height: 100%;
+}
+body{
+display: flex;
+flex-direction: column;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    padding: 32px 0;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.info .container{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+}
+.info li{
+    font-size: 18px;
+    margin:0 0 32px;
+}
+img{
+    max-width: 300px;
+    max-width:300px;
+}
+.info{
+    padding:10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    max-width:500px;
+}
+
+.hero {
+    padding: 96px 0;
+    margin-top: 50px;
+}
+
+.hero h2 {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 16px 48px 0;
+}
+
+.ad-list {
+    display: flex; /* Используем Flexbox */
+    flex-direction: row; /* Элементы располагаются в столбик */
+    gap: 16px; /* Промежуток между элементами */
+}
+
+.ad-item {
+    display: flex; /* Для выравнивания содержимого внутри блока */
+    flex-direction: column;
+     /* Элементы располагаются вертикально */
+    padding: 10px; /* Отступы внутри блока */
+    border: 1px solid #ccc; /* Граница для отделения блоков */
+    border-radius: 8px; /* Закругленные углы */
+}
+
+.hero img {
+    max-width: 100%;
+    object-fit: cover;
+}
+    
+.ad-list {
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    justify-content: flex-start; /* Выравнивание элементов по левому краю */
+    width: 100%; /* Занимает всю доступную ширину */
+}
+
+.ad-item {
+    flex: 1 1 300px; /* Гибкий рост и сжатие, базовая ширина 300px */
+    min-width: 300px; /* Минимальная ширина элемента */
+    max-width: calc(33.333% - 16px); /* Максимальная ширина с учетом отступов */
+}
+
+.ad-item img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+}
+
