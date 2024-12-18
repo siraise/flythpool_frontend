@@ -1,0 +1,128 @@
+.search-section {
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.search-form {
+    display: flex;
+    gap: 1.2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-form select,
+.search-form input {
+    padding: 0.8rem;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.search-form select:focus,
+.search-form input:focus {
+    border-color: #4dabf7;
+    outline: none;
+}
+
+.search-form button {
+    padding: 0.8rem 1.5rem;
+    background-color: #228be6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #1c7ed6;
+}
+
+.results-section {
+    margin: 2rem auto;
+    max-width: 1200px;
+    overflow-x: auto;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.results-table th,
+.results-table td {
+    padding: 1.2rem;
+    border: 1px solid #e9ecef;
+    text-align: left;
+}
+
+.results-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.results-table img {
+    max-width: 100px;
+    height: auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+}
+
+.pagination-btn {
+    padding: 0.8rem 1.2rem;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-btn:hover {
+    background-color: #228be6;
+    color: white;
+    border-color: #228be6;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.results-table {
+    min-width: 800px;
+}
+
+@media (max-width: 480px) {
+    .search-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-form select,
+    .search-form input,
+    .search-form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagination {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+    .pagination-btn {
+        padding: 5px 10px;
+    }
+}

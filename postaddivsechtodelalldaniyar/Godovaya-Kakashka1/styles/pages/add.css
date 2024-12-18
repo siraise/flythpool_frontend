@@ -1,0 +1,231 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+section {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+ 
+form { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 16px; 
+}
+
+/* Контейнер */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    padding: 2rem 0;
+}
+
+.header a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        color: #007bff;
+        transform: translateX(-5px);
+    }
+
+    &::before {
+        content: '← ';
+        margin-right: 0.5rem;
+    }
+}
+
+.header-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.header-link:hover {
+    color: #007bff;
+}
+
+.add {
+    padding: 40px 0;
+}
+
+.container form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input[type="file"] {
+    padding: 8px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label[for="agree"] {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+}
+
+select {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Стили для hover-эффекта */
+input:hover, select:hover, textarea:hover {
+    border-color: #4a90e2;
+}
+
+/* Стили для disabled-состояния */
+input:disabled, select:disabled, textarea:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.add form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: 500;
+    transform: translateX(5px);
+    transition: transform 0.3s ease;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.2);
+    outline: none;
+    transform: scale(1.01);
+}
+
+input[type="file"] {
+    background: #f1f3f4;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+label:has(+ input:focus),
+label:has(+ select:focus),
+label:has(+ textarea:focus) {
+    color: #3498db;
+    transform: translateX(10px);
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Анимация при наведении */
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #bdc3c7;
+    background: #ffffff;
+}
+
+/* Стиль для чекбокса */
+label[for="agree"] {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+}

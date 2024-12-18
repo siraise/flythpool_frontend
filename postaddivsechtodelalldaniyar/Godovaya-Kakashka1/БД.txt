@@ -1,0 +1,14 @@
+1) create database new_life;
+
+2) 
+CREATE TABLE users (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(256) NOT NULL,
+    surname VARCHAR(256) NOT NULL,
+    enail VARCHAR(256) NOT NULL,
+    phone VARCHAR(256) NOT NULL UNIQUE,
+    password VARCHAR(256) NOT NULL,
+    agree TINYINT(1) NOT NULL,
+    api_token VARCHAR(256)
+);
+
